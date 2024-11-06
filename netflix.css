@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+.container{
+    margin: 0px 166px;
+    font-family: "Noto Sans", sans-serif;
+}
+.header{
+    background-image:url(MovieD1.jpg);
+    height: 100vh;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+.header-line{
+    display: flex;
+    justify-content: right;
+    padding-top: 30px;
+}
+.header-logo{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#03a9f4 ;
+    margin-right: 800px;
+}
+
+.language{
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    padding: 7px 17px;
+    border-radius: 5px;
+}
+.header-sing{
+    background-color:#03a9f4;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 17px;
+    border-radius: 5px;
+    margin-left: 15px;
+    height: 18px;
+}
+.sign{
+    text-decoration: none;
+    color: #fff;
+}
+.header-movie{
+    color: #fff;
+    text-align: center;
+    font-size: 53px;
+
+    margin-top: 180px;
+    font-weight:900;
+}
+.header-price{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+
+    margin-top: 17px;
+    font-weight:600; 
+}
+.header-quiz{
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+
+    margin-top: 25px;
+    font-weight:500; 
+}
+.header-email{
+    text-align: center;
+    margin-top: 15px;
+}
+.blue-btn {
+    padding: 12px 30px ;
+    font-weight: 700;
+    font-size: 26px;
+    color: white;
+    background-color: #03a9f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 500px;
+    margin-top: 15px;
+    align-items: center;
+    transition: transform 0.2s ease; /* Плавный переход для анимации */
+}
+
+.blue-btn:focus {
+    outline: none;
+}
+
+.blue-btn::after {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.blue-btn:active {
+    transform: scale(1.1); /* Увеличение кнопки при нажатии */
+}
+/*
+.line{
+}
+*/
+
+
+.trend-text{
+    display: flex;
+    justify-content: left;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+
+}
+.trend-movie{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.idol{  
+    height: 280px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.idol:hover{
+    transform: scale(1.05);
+}
+
+.reason-text{
+    display: flex;
+    justify-content: left;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    margin-top: 80px;
+}
+.cards{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+    background: linear-gradient(to top,#7c4dff, #3f51b5,#303f9f );
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный черный слой */
+    z-index: 1; /* Слой выше изображения */
+  }
+.card-text{
+    z-index: 2;
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 15px;
+
+}
+.card-disk{
+    z-index: 2;
+    position: absolute;
+    color:  rgba(143,144,157,255);
+    font-size: 17px;
+    font-weight: 800px;
+    margin-left: 15px;
+    margin-top: 110px;
+}
+.quiz-text{
+    display: flex;
+    justify-content: left;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+.faq-question{
+    padding: 26px;
+    color: #fff;
+    font-weight:500 ;
+    font-size: 24px;
+    background-color: rgba(45,45,45,255);
+    margin-top: 10px;
+}
+.faq-question:hover{
+    background-color:rgba(65,65,65,255);
+}
+
+.cart{
+    position: relative;
+    padding-right: 10px;
+}
+.cart-img{
+    height: 45px;
+    position: absolute;
+    top:-32px;
+    right:-7px;
+    transition: transform 0.3s ease; 
+}
+.cart-img:hover{
+    transform: rotate(45deg); 
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 15px;
+    background-color:rgba(45,45,45,255) ;
+    color: #fff;
+    font-size: 25px;
+}
+
+.faq-answer.show {
+    max-height: 150px; /* или значение побольше, чтобы вместить ваш текст */
+    padding: 15px;
+}
+.footer-ready{
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 340px;
+    color: #fff;
+}
+.footer-contact{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 80px;
+
+    margin-bottom: -10px;
+}
+.cont{
+    color: rgba(158,158,158,255);
+    margin-top: 20px;
+    text-decoration: none;
+}
+.footer-display{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-line{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 35px;
+    margin-right: 100px;
+}
+.footer-language{
+    margin:55px 0;
+}
